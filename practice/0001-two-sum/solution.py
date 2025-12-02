@@ -1,11 +1,14 @@
-class Solution(object):
-    def twoSum(self, nums, target):
-        """
-        :type nums: List[int]
-        :type target: int
-        :rtype: List[int]
-        """
-        for i in range(0, len(nums)):
-            for j in range(i+1, len(nums)):
-                if nums[i] + nums[j] == target:
-                    return [i,j]
+class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        numMap = {}
+        n = len(nums)
+
+        for i in range(n):
+            numMap[nums[i]] = i
+
+        for i in range(n):
+            complement = target - nums[i]
+            if complement in numMap and numMap[complement] != i:
+                return [i, numMap[complement]]
+
+        return [] 
