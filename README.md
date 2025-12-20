@@ -1,4 +1,4 @@
-## 💡 Transparency & Integrity
+## 💡 Warning
 This repository serves as a record of my learning journey in Artificial Intelligence at VNU-UET. 
 
 - **Self-Solved:** Problems solved entirely by my own logic and coding.
